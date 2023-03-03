@@ -1,0 +1,132 @@
+/*========== INLANDS ==========*/
+.islands {
+    height: 100vh;
+    position: relative;
+}
+
+.islands__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.islands__container {
+    text-align: center;
+}
+
+.islands__subtitle,
+.islands__title {
+    color: #fff;
+}
+
+.islands__subtitle {
+    font-size: 1.25rem;
+}
+
+.islands__title {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .islands__title {
+        font-size: 5rem;
+    }
+}
+
+/* Controls */
+.controls {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--body-color);
+    border-radius: 0.75rem;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.controls__img {
+    width: 35px;
+    height: 35px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.controls__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 1rem;
+    column-gap: 1rem;
+}
+
+/* Active controls */
+.swiper-slide-thumb-active {
+    width: 45px;
+    height: 45px;
+}
+
+.card {
+    margin-top: 2rem;
+    border: 1px solid var(--text-color-light);
+    border-radius: 0.25rem;
+    padding: 2.5rem 1.25rem 1.75rem;
+
+    input {
+        border: 1px solid var(--text-color-light);
+        width: 100%;
+        height: 45px;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+        color: var(--text-color);
+        background-color: var(--container-color);
+    }
+
+    .button-booking {
+        padding: 0.75rem 1.25rem;
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .controls__container {
+        -webkit-column-gap: 0.25rem;
+        column-gap: 0.25rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .controls {
+        padding: 0.5rem;
+        border-radius: 1.25rem;
+    }
+    .controls__container {
+        -webkit-column-gap: 1.5rem;
+        column-gap: 1.5rem;
+    }
+    .controls__img {
+        width: 45px;
+        height: 45px;
+        border-radius: 0.75rem;
+    }
+    .swiper-slide-thumb-active {
+        width: 55px;
+        height: 55px;
+    }
+}

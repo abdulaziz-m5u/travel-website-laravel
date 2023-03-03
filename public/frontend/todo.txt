@@ -1,0 +1,12 @@
+# paket travel ✔
+# blog ✔
+# contact ✔
+# detail blog ✔
+# detail paket travel  ✔
+# logo ✔
+# edit paket travel image
+# edit logo patners ✔
+# value image ✔
+# home image ✔
+# blog & image ✔
+# footer copy ✔

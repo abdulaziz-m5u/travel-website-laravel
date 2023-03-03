@@ -1,0 +1,28 @@
+.content__container {
+  display: grid;
+  gap: 2rem;
+
+  p {
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+}
+
+.package-travel {
+  ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    li {
+      a {
+        color: var(--text-color);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content__container {
+    grid-template-columns: 1.5fr 0.5fr;
+  }
+}
